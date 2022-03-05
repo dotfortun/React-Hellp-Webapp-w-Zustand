@@ -9,6 +9,9 @@ const useStore = create((set, get) => ({
       people: get().people.concat(person),
     });
   },
+  convertURL: (url) => {
+    return url.replace(/https:\/\/swapi\.(dev|tech)\/api/i, "");
+  },
   addVehicles: (vehicle) => {
     set({
       vehicles: get().vehicles.concat(vehicle),
