@@ -10,6 +10,7 @@ import DebugMenu from "./views/debugmenu";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import {Planet} from "./views/planets"
 
 //create your first component
 const Layout = () => {
@@ -27,6 +28,7 @@ const Layout = () => {
             <Route exact path="/demo" element={<Demo />} />
             <Route exact path="/debug" element={<DebugMenu />} />
             {/*                |path   |url key | */}
+            <Route exact path="/planets/:planetId" element={<Planet />} />
             <Route exact path="/people/:peopleId" element={<People />} />
             <Route element={<h1>Not found!</h1>} />
           </Routes>
