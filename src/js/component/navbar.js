@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import Debug from "../component/debug";
+import Debug from "./debug";
 import useStore from "../store/zustand";
 
 export const Navbar = () => {
